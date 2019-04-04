@@ -59,14 +59,10 @@
         <span>Introduction to<br>HTML & CSS</span>
       </h1>
 
-      <!--
-      <img class="instructor" src="http://placehold.it/225x225" alt="Instructor Name">
-      <h2><span class="cursive">with</span> Instructor name</h2>
       <ul>
-        <li><a href="mailto:">hello@email.com</a></li>
-        <li><a href="http://website.com">website.com</a></li>
-        <li><a href="http://twitter.com/">@twitter</a></li>
-      </ul>-->
+        <li><a href="http://twitter.com/learningcode">@learningcode</a></li>
+        <li><a href="https://twitter.com/search?q=%23codemobile&src=typd">#codemobile</a></li>
+      </ul>
 
       <footer>
         <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
@@ -96,6 +92,28 @@
       </script>
     </section>
 
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #What is Code?
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Code is...
+
+        **...a set of instructions that tell a computer what to do**.
+
+        <ul>
+          <li class="delayed">Computers don’t understand human languages like english</li>
+          <li class="delayed">They only understand a different kind of language: computer, or “programming” languages</li>
+          <li class="delayed">Computer languages are written in code</li>
+          <li class="delayed">There are lots of computer languages!</li>
+        </ul>
+
+      </script>
+    </section>
+
     <section class="slide title" data-markdown>
       <script type="text/template">
         # Today's Project
@@ -105,7 +123,13 @@
 
     <section class="slide title" data-markdown data-toc>
       <script type="text/template">
-        #What is a Website?
+        #Why Do We Make Websites?
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        ##...To share information!
       </script>
     </section>
 
@@ -120,9 +144,22 @@
           <li class="delayed">Write code</li>
         </ol>
 
+        ![https://www.flickr.com/photos/baldiri/5734993652](framework/img/workshop/wireframe.jpg)
+        ![https://www.flickr.com/photos/ivanwalsh/4457223020](framework/img/workshop/worddoc.jpg)
+        ![https://pixabay.com/en/social-social-networks-1206614/](framework/img/workshop/angry.jpg)
+        ![https://pixabay.com/en/code-programming-hacking-html-web-820275/](framework/img/workshop/code.jpg)
+
+                <div class="dropdown">
+                          <button class="dropbtn">Attributions</button>
+                          <div class="dropdown-content">
+                            <a href="https://www.flickr.com/photos/baldiri/5734993652">Wireframing photo</a>
+                            <a href= "https://www.flickr.com/photos/ivanwalsh/4457223020">Microsoft word photo</a>
+                            <a href= "https://pixabay.com/en/social-social-networks-1206614/]">Social Media illustration</a>
+                            <a href="https://pixabay.com/en/code-programming-hacking-html-web-820275/">Code photo</a>
+                          </div>
+
       </script>
     </section>
-
 
     <section class="slide title" data-markdown data-toc>
       <script type="text/template">
@@ -157,12 +194,16 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Developer Tools
+        #Let's take a look!
 
-        **Chrome Developer tools** take it a step further and allows you to *inspect* any web page, making it easier to test & debug code. The tools can be accessed in a couple ways:
+        We can use **Chrome Developer tools** to see the code that makes up a website, and change how it looks on our screen.
 
-        * Option 1: right-click / two-finger tap on a web page and select **Inspect Element**
-        * Option 2: **Ctrl + Shift + I** (PC) / **Cmnd + Option + I** (Mac)
+        1. Open [this website](offline-docs/superhero-profile/index.html)
+        1. Right-click / two-finger tap on the page and select **Inspect Element**
+
+        Try changing the heading!
+
+        ![Inspect the H1 element and change the text between the H1 tags](framework/img/workshop/inspect-element.png)
 
       </script>
     </section>
@@ -191,23 +232,10 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #HTML is a language
-
-        <ul>
-          <li>Computers don’t understand human languages like english</li>
-          <li>They only understand a different kind of language: computer, or “programming” languages</li>
-          <li>Computer languages are written in code</li>
-          <li>There are lots of computer languages!</li>
-          <li>HTML is a special language for making websites</li>
-        </ul>
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
         #HTML: HYPER TEXT MARKUP LANGUAGE
 
         <ul>
+          <li>HTML is a language</li>
           <li>We use HTML to communicate with our browsers</li>
           <li>When we use HTML, we are telling our browser information about our webpage and what kind of content to display</li>
         </ul>
@@ -364,6 +392,16 @@
         ```
 
         To create an HTML page, we just need to save it with the file extension `.html`.
+
+        **Offline resource: [HTML Reference](offline-docs/html-reference.htm)**
+
+        ---
+        ###Resources
+
+        *   [HTML Reference on w3schools.com](https://www.w3schools.com/tags)
+        *   [MDN HTML documentation](https://developer.mozilla.org/en-US/docs/Web/HTML)
+        *   [Search for FAQ on StackOverflow](https://stackoverflow.com/)
+
       </script>
     </section>
 
@@ -620,7 +658,7 @@
             <li>Our webpage is looking a little bare!</li>
             <li>Let’s add some new content about you</li>
             <li>After the last ``` <img>``` tag , add a new ``` <h2>``` tag to make a new section</li>
-            <li>Add some paragraphs ```(<p>) ``` or a list ``` (<ul>) ```to talk about some of your favourite things for example: Movies, Books, Sports, Video Games, or pets!</li>
+            <li>Add some paragraphs ```(<p>) ``` to talk about some of your favourite things for example: Movies, Books, Sports, Video Games, or pets!</li>
         </ul>
 
       </script>
@@ -629,8 +667,20 @@
     <section class="slide title" data-markdown>
       <script type="text/template">
       #CSS Time
-      ##Let's make everything beautiful!
+      ##Let's make everything <strike>beautiful</strike> look cool!
     </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Why making ugly websites is important
+
+        * Making beautiful websites is hard
+        * Coders `!=` Designers (Some coders are designers, they are also unicorns🦄)
+        * If we were learning English, we wouldn’t be expected to write poetry right away
+        * This lets us focus on exploring with the code!
+
+      </script>
     </section>
 
     <section class="slide" data-markdown>
@@ -644,6 +694,27 @@
         CSS requires these symbols: curly brackets `{ }`, colon `:`, semi-colon `;`
 
         ![keyboard](framework/img/workshop/keyboard-css.png)
+
+      </script>
+    </section>
+
+    <section class="slide two-col-list" data-markdown>
+      <script type="text/template">
+        #What's the Difference?
+        * HTML
+          * Used for content
+            <h3>Headings</h3>
+            Paragraphs<br>
+            ![Images](framework/img/workshop/images.png)<br>
+            <a href="http://css.cool">Links</a><br>
+            * Lists (like this!)
+        * CSS
+          * Used for design
+            <div style="color: Turquoise;">Colours</div>
+            <div style="font-family: Impact, Charcoal, sans-serif !important;">Fonts</div>
+            <div style="background-color: Gold;">Backgrounds</div>
+            <div style="border: 5px solid plum;">Borders</div>
+            <div style="font-size: 72px;">Sizes</div>
       </script>
     </section>
 
@@ -685,6 +756,15 @@
           <li>OR CSS can target all of the list items on a page and tell them to be a font-size 16 pixels</li>
           <li>There are many many other CSS rules!</li>
       </ul>
+
+        **Offline resource: [CSS.cool](offline-docs/css-reference.htm)**
+
+        ---
+        ###Resources
+
+        *   [CSS Reference on w3schools.com](https://www.w3schools.com/cssref)
+        *   [MDN CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS)
+        *   [Search for FAQ on StackOverflow](https://stackoverflow.com/)
 
       </script>
     </section>
@@ -804,11 +884,28 @@
       <script type="text/template">
         #Changing size with pixels
 
+        Pixels are tiny units that make up our screen.
+
         We can change the size of our text with the <strong>font-size</strong> property using pixels.
 
         ```font-size: 64px;```
 
-        Try making the h1 on your site really big!
+        Try making the `h1` on your site really big!
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Changing size with percentage
+
+        We can also change the size of elements using percentages. This helps ensure that elements are sized *in comparison to* the size of our window. We should use % when designing for multiple screen sizes (like mobile).
+
+        We can change the size of our images with the <strong>width</strong> property using percentage.
+
+        ```width: 50%;```
+
+        Try making the `img` elements on your site smaller.
 
       </script>
     </section>
@@ -816,7 +913,7 @@
     <section class="slide" data-markdown>
       <script type="text/template">
         #Other Cool CSS Properties
-        ##Visit css.cool in your browser to find more fun CSS properties!
+        ##See [CSS.cool](offline-docs/css-reference.htm) or try these CSS properties!
 
         ```
         color: #999999;
@@ -854,6 +951,19 @@
       </script>
     </section>
 
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Today we covered...
+
+        <p>Basic elements of a website</p><!-- .element: class="delayed" -->
+        <p>How to use text editors like Atom to build a website from scratch</p><!-- .element: class="delayed" -->
+        <p>Adding content like headings, paragraphs, images</p><!-- .element: class="delayed" -->
+        <p>Styling our websites using CSS</p><!-- .element: class="delayed" -->
+        <p>Where to find HTML &amp; CSS documentation, so we can continue learning from home</p><!-- .element: class="delayed" -->
+
+      </script>
+    </section>
+
     <section id="next-steps" class="slide title" data-markdown data-toc>
       <script type="text/template">
         #Next steps
@@ -878,7 +988,6 @@
       </script>
     </section>
 
-
   <!-- Last slide -->
     <section class="slide last">
       <h1>Thank you!</h1>
@@ -887,6 +996,11 @@
           Intro to HTML &amp; CSS
         </span>
       </h2>
+
+      <ul>
+        <li><a href="http://twitter.com/learningcode">@learningcode</a></li>
+        <li><a href="https://twitter.com/search?q=%23codemobile&src=typd">#codemobile</a></li>
+      </ul>
 
       <p class="attribution">Slide presentation originally created by <a href="http://christinatruong.com">Christina Truong</a> based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>. Special thanks to all contributors to the slides: <a href="https://github.com/mattb0m)">mattb0m</a>, <a href="https://github.com/zoster">zoster</a>, <a href="https://github.com/hrtovey">hrtovey</a>, <a href="https://github.com/jessynd">jessynd</a>, <a href="https://github.com/melissacrnic">melissacrnic</a> and <a href="http://pixelles.ca/blog/2015/01/workshop-twine">Rebecca Cohen Palacios</a></p>
     </section>
