@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Canada Learning Code</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- Takes care of CSS3 prefixes -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- opens all links in a new window -->
+  <base target="_blank">
+</head>
+
+<!-- Timer/progress bar: Define the presentation duration using "data-duration" in minutes. -->
+<body class="en" data-duration="360">
+  <main>
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        ##Instructor Notes
+
+        ##HTML &amp; CSS (2 hours)
+
+        <br>
+        #Schedule
+
+        * **Intro to HTML (30 min)**: Coders' Code, What is code, Why make websites, Developer tools activity, HTML elements.
+        * **Getting started in Atom (15 min)**: Setting up Atom + adding project folder, Base HTML tags, Attributes.
+        * **Adding content (30 min)**: Paragraphs, Headings, Images, Links.
+        * **CSS Time (30 min)**: What is CSS, Where does it go, CSS rules, Colour, Fonts, Size.
+        * **Closing (15 min)**: Demos, Learning outcomes, Next steps.
+
+
+        <br>
+        #General Notes
+
+        * Important! Please give learners enough time to download learner files from slide 1 - check in with them before continuing from this slide.
+        * Show learners how to open files. Go through the steps - e.g. Open Atom > File > add project folder.
+        * Show learners how to copy text from slides + paste into atom. Keyboard shortcuts can be new to some learners: Remember to mention them especially since it's invisible to them when you use keyboard shortcuts on the overhead projector.
+        * Remind learners to constantly SAVE + REFRESH (and show them how). Make a bunch of changes early to show how saving and refreshing isn't just how to code, it can be fun experimenting. Try an "oops, it broke, undo, save, refresh" to show how save experimenting is.
+        * Share shortcuts and tips on navigating between windows. Hot corners, shortcut keys, taskbar hovers. Whatever works.
+
+        <br>
+        #Contingency
+
+        This content is designed to work entirely offline. Learners will need:
+
+        * Laptops with Google Chrome and Atom installed
+        * Learner files (pre-saved onto computers or from a USB stick)
+
+        There are offline references in the `offline-docs` folder of the learner files.
+
+        * [HTML Reference](offline-docs/html-reference.htm)
+        * [CSS.cool](offline-docs/css-reference.htm)
+
+        Keep in mind that some of the links + additional resources won't work offline.
+
+
+        <br>
+        #Specific Examples
+
+        **How do we see websites? (slide 14):** The term "browser" could be a new term for learners. Ask for an example browser. How do they accesss the internet? Have them raise their hands if they use [Google Chrome], etc.
+
+        **Let's take a look (slide 15):** This give learners a chance to see and interact with html code right away. The website is saved in the learner files and will work offline. Demonstrate how to "inspect element" and then give learners 2-3 minutes to 'hack' the website.
+
+        **HTML is made up of elements (slide 19):** Elements are parts of a website. When we inspected the code behind the Black Panther website, what are some elements that we were able to interact with? (e.g. heading, paragraphs, images)
+
+        **HTML: the content layer (slide 21):** One thing that can be helpful when explaining this is repeating "Opening tag (point at beginning), closing tag (point at end), and content inbetween (point at text in between tags)" - over and over, while looking at examples.
+
+        Keep in mind that this applies to *most* html elements - but we will look at some exceptions where the opening and closing tags are squished into one tag (e.g. image elements)
+
+        **Base HTML tags (slide 27):** Point out the Offline HTML reference (linked to this slide) and encourage learners to have this open in another tab so they can search for HTML elements as they go. This can help develop *resourcefulness* in learners by encouraging them to find answers to their questions versus having the instructor tell them the answer. This will help set them up for success even after the workshop.
+
+        **The head element (slide 29):** Explain that the `<head>` is all of the behind-the-scenes information that we need to know, but don’t need everyone to see. Learners may also ask what the elements inside the head are for:
+
+        `<meta>` provides metadata about the html document - in this case, the character encoding (or type of alphabet) being used. It converts bytes of information into characters (e.g. letters).
+
+        `<title>` describes the name of the website (the name that shows when you bookmark or favourite the page in your browser).
+
+        **The body element (slide 30):** This is where all of our content goes, what people see when they visit our website. We will spend most of our time working in here!
+
+        **Attributes (slide 31):** We will revisit this later. We can use attributes to provide more context for users with vision loss (e.g.) by adding alternative text to describe images on our page. We'll see an example of this later on.
+
+        **Exercise (slide 35):** Give learners 2-3 minutes to edit the paragraph element (text) on their website.
+
+        **Exercise (slide 37):** Note on headings - It is best practice to only have one H1 element on each page. (You will also hear from SEO/search optimization experts that having mulitple h1 tags is okay - but for the purpose of accessible design, we recommend only using one). Most importantly, try your best to avoid skipping heading ranks as this can be really confusing for screen readers! (e.g. H1 then H3 is what we want to avoid).
+
+        **Self-closing tags and images (slide 38):** Here's an example of using attributes for accessible design! Alt text!
+
+        **Image files paths (slide 40):** Where are our images located? We'll need to add TWO relatives paths to get to our images. (e.g. `/images/food/donut.jpeg`). Note that jpeg and jpg are the same file type - it began as jpeg and was later shortened to jpg.
+
+        **Exercise (slide 41):** Show learners where to find the images that we have pre-loaded into their project folder. They have the option of using food images or pet images for our workshop, but can replace these with their own images after the workshop if they would like!
+
+        **Exercise: Your favourite things (slide 43):** You can also challenge learners to create a list of items instead of a paragraph. Encourage them to search the HTML reference to find out how to do this. Use ctrl/command + F to search for keywords. (`<ul>` and `<ol>` are both correct!)
+
+        **A webpage without CSS (slide 48)** and **A website with CSS (slide 49):** These are the exact same website - with and without the stylesheet linked.
+
+        **Where do we put CSS? (slide 50):** This line of code is the difference between the two example websites we just looked at. This code tells our HTML page where to find the stylesheet, which includes rules on how the website should look.
+
+        Our starter project already includes this link in the `<head>`. See if learners can spot it!
+
+        **CSS is made up of rules (slide 51):** Draw attention to the linked CSS.cool reference. This website will work offline (we saved it in the learner files). Have learners open the page in a new tab so they can have more style options available to them as they style their websites.
+
+        **Colour (slide 54):** We can either use names of colours (see "colors" tab of css.cool) OR we can use hex codes for more specific colours (see "colour picker" tab of css.cool). When using hex codes, remember to add a `#` before the 6-digit code.
+
+        **Fonts in CSS (slide 56):** While we can't use just any font right now, if we are connected to the internet, we can use sites like [Google Fonts](http://fonts.google.com) to import more unique fonts into our code. This import code makes it so that even if users don't have the unique font that we are using installed on their computer, they can still see it properly on the webpage.
+
+        **Stretch Goal: Selecting specific elements (slide 60):** Only if you have time, or if learners are asking how to change the size of only one image on their page (e.g.).
+
+        Note that `id` attributes can also be used for CSS but can only be used once per page. Some prefer to use only classes for styling because of this rule but it's a personal preference.  Read more about it [here](https://css-tricks.com/the-difference-between-id-and-class/).
+
+        **Demos (slide 63):** Bonus: If you have time, have learners share projects Gallery Walk-style. Have learners refresh their page and tuck in their chair, then give everyone 5-10 minutes to walk around and test out each other's websites. If you are short on time, have them show the person sitting next to them instead.
+
+      </script>
+    </section>
+
+  </main><!-- cls main section -->
+
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Uncomment the plugins you need -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Grabs all the .snippet elements
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+</body>
+
+
+
+</html>

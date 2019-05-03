@@ -208,20 +208,6 @@
       </script>
     </section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Text Editor
-
-        * Used to write and edit code
-        * Preinstalled editors (Notepad / TextEdit) don't include many features
-        * Paid and free options include features such as colour highlighting and plugins for improving workflow
-
-        **[Atom](https://atom.io/)** is totally free and is the editor we'll be using today.
-        <span class="note">(If you have another editor installed, it will work as well but some features may be different.)</span>
-
-      </script>
-    </section>
-
     <section class="slide title" data-markdown data-toc>
       <script type="text/template">
         #Coding in HTML
@@ -309,6 +295,20 @@
         #Ready to start coding?
 
         <img src= "framework/img/cat.gif" alt="Cat Typing Gif">
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Text Editor
+
+        * Used to write and edit code
+        * Preinstalled editors (Notepad / TextEdit) don't include many features
+        * Paid and free options include features such as colour highlighting and plugins for improving workflow
+
+        **[Atom](https://atom.io/)** is totally free and is the editor we'll be using today.
+        <span class="note">(If you have another editor installed, it will work as well but some features may be different.)</span>
+
       </script>
     </section>
 
@@ -579,19 +579,19 @@
         Images use a self-closing tag. It also requires a `src` *attribute* to tell the browser the location of the image file.
 
         ```
-        <img src="path/to/image/file-name">
+        <img src="path/to/image/file-name"/>
 
         ```
 
         `alt` is another attribute that is added to images to provide *alternative text* to visually impaired web visitors using screen readers.
 
         ```
-        <img src="http://placekitten.com/200/300" alt="kitten!">
+        <img src="http://placekitten.com/200/300" alt="kitten!"/>
 
         ```
 
         ##Example of `alt` when image does not load:
-        <img src="" alt="kitten!">
+        <img src="" alt="kitten!"/>
       </script>
     </section>
 
@@ -619,7 +619,7 @@
         Since the images are not in the same folder as **index.html**, use a *relative* path to link to the file.
 
         ```
-        <img src="images/image-file.jpg">
+        <img src="images/image-file.jpg"/>
         ```
         The above example directs the browser to a folder named **images**, then the filename, *including the file extension*.
       </script>
@@ -912,6 +912,30 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
+        #Stretch Goal: Selecting specific elements
+
+        We can use the `class` attribute to style specific elements on our website.
+
+        ##In index.html
+        Give the element a name `class="small"`
+        ```html
+        <img class=”small” src=”image.jpeg”/>
+        ```
+
+        ##In style.css
+        Add that name to a new css rule `img.small`
+        ```css
+        img.small {
+          width: 200px;
+          border-radius: 50%
+        }
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
         #Other Cool CSS Properties
         ##See [CSS.cool](offline-docs/css-reference.htm) or try these CSS properties!
 
@@ -951,6 +975,13 @@
       </script>
     </section>
 
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #DEMOS
+        ##Share what you made!
+      </script>
+    </section>
+
     <section class="slide" data-toc data-markdown>
       <script type="text/template">
         # Today we covered...
@@ -964,26 +995,22 @@
       </script>
     </section>
 
-    <section id="next-steps" class="slide title" data-markdown data-toc>
-      <script type="text/template">
-        #Next steps
-      </script>
-    </section>
-
     <section class="slide small-type" data-markdown>
       <script type="text/template">
         #Next Steps
 
-        ##Getting your site online
+        ##Free webmaking tools:
 
-        You will need to register a domain name and purchase hosting. Here are some suggestions:
+        * Create and host websites online for free with [Glitch](https://glitch.com)
+        * Continue creating websites offline with [Atom](https://atom.io)
+        * Keep exploring by "hacking" websites with [Mozilla X-Ray Goggles](https://goggles.mozilla.org)
 
-        * Host your site for free on [Glitch](https://glitch.com)
-        * Host your site for free with [github pages](https://pages.github.com/)
-        * [namecheap.com](https://www.namecheap.com/) - website hosting
-        * [hover.com](http://hover.com/ladiescode) - domain names and personal emails
+        ##Keep practicing!
 
-        Keep practicing! Visit [eraseallkittens.com](http://eraseallkittens.com) to keep practicing your new HTML & CSS skills
+        * Use your HTML knowledge in a videogame with [eraseallkittens.com](http://eraseallkittens.com)
+        * Spread the love by creating a [LoveBomb](http://lovebomb.me/) for a friend
+        * Check out [CodePen](https://codepen.io/projects/) for inspiration on your next project
+        * See what [Canada Learning Code](https://canadalearningcode.ca) workshops are taking place near you
 
       </script>
     </section>

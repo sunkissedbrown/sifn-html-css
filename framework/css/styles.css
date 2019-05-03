@@ -799,7 +799,7 @@ code {
 /* Styles specific to this workshop
 ------------------------------------*/
 .slide.intro {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner-home2.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner-home3.jpg) no-repeat;
   background-size: cover;
 }
 
