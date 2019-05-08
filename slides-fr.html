@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Canada en programmation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- S'occupe des préfixes CSS3 -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- Ouvre tous les liens dans une nouvelle fenêtre -->
+  <base target="_blank">
+</head>
+
+<!-- Barre de progression / durée : définissez la durée de la présentation en minutes avec « data-duration ». -->
+<body class="en" data-duration="360">
+  <main>
+    <section class="slide welcome highlight">
+      <h1><img class="logo-stacked" src="framework/img/workshop/codemobilelogo.png" alt="Logo de Canada en programmation">Bienvenue!</h1>
+
+      <div class="instructions">
+        <!-- AJOUTEZ LES INFOS DU WI-FI ICI -->
+        <h2>Branchez-<br>vous</h2>
+        <p><strong>Wi-Fi :</strong> réseau Wi-Fi</p>
+        <p><strong>Mot de passe :</strong> mot de passe du Wi-Fi</p>
+        <hr>
+
+        <h2>Téléchargez<br> et installez</h2>
+        <ol class="downloads">
+          <li>Fichiers d'apprentissage (dossier zip) : <a href="https://github.com/ladieslearningcode/codemobile-html-css/archive/master.zip">http://bit.ly/codemobile-html-css</a>
+            <ul>
+              <li>Dézippez le dossier des fichiers d'apprentissage (<em>Extraire tout</em> si vous utilisez Windows).</li>
+              <li>Ouvrez <em>diapositives.html</em> dans le navigateur pour afficher les diapositives.</li>
+            </ul>
+          </li>
+          <li>Éditeur Atom : <a href="http://atom.io">http://atom.io</a></li>
+            <ul><li>Si vous utilisez un Chromebook, vous pouvez utiliser l'éditeur <a href="https://chrome.google.com/webstore/detail/caret/fljalecfjciodhpcledpamjachpmelml?hl=en">Caret</a>.</li></ul>
+          <li>Navigateur Chrome : <a href="https://www.google.ca/chrome/browser/desktop/">https://www.google.ca/chrome</a></li>
+          </li>
+        </ol>
+      </div>
+
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Contenu créé par <a prefix="cc: http://creativecommons.org/ns#" href="http://canadalearningcode.ca" property="cc:attributionName" rel="cc:attributionURL">Canada en programmation</a></p>
+        <p class="right">Utilisez les flèches gauche <span class="arrow">&#8592;</span> et droite <span class="arrow">&#8594;</span> pour naviguer.</p>
+      </footer>
+    </section>
+
+    <section class="slide intro">
+      <!--<img class="logo" src="framework/img/llc-logo-white.png" alt="Logo de Femmes en programmation">-->
+      <br><h1 class="heading-bg">
+        <span>Introduction au <br>HTML et au CSS</span>
+      </h1>
+
+      <ul>
+        <li><a href="http://twitter.com/learningcode">@learningcode</a></li>
+        <li><a href="https://twitter.com/search?q=%23codemobile&src=typd">#codemobile</a></li>
+      </ul>
+
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licence Creative Commons" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Contenu créé par </a> <a prefix="cc: http://creativecommons.org/ns#" href="http://canadalearningcode.ca" property="cc:attributionName" rel="cc:attributionURL">Canada en programmation</a></p>
+        <p class="right">Utilisez les flèches gauche <span class="arrow">&#8592;</span> et droite <span class="arrow">&#8594;</span> pour naviguer.</p>
+      </footer>
+    </section>
+
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        #BIENVENUE
+        <img alt="Code Mobile Logo" src="framework/img/workshop/codemobilelogo.png" style="padding-left:10%; padding-right:10%;"/> <br>
+        <a href= "http://codemobile.rocks"> [codemobile.rocks] </a>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Le code des programmeurs
+
+        1. Soyez accueillants et chaleureux.
+        1. Choisissez bien vos mots et vos actions.
+        1. Respectez l'espace des autres dans les conversations.
+        1. Posez des questions.
+        1. Faites de votre mieux (et amusez-vous!).
+
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Qu'est-ce que le code?
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Le code, c'est...
+
+        **...un ensemble de consignes disant à l'ordinateur quoi faire.**.
+
+        <ul>
+          <li class="delayed">Les ordinateurs ne comprennent pas le langage des humains, comme le français ou l'anglais.</li>
+          <li class="delayed">Ils comprennent seulement un type de langage, c'est-à-dire les langages informatiques ou de « programmation ».</li>
+          <li class="delayed">Les langages informatiques sont écrits en code.</li>
+          <li class="delayed">Il y a beaucoup de langages informatiques!</li>
+        </ul>
+
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        # Le projet du jour
+        ## Nous créerons un site Web avec le HTML et le CSS.
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Pourquoi créons-nous des sites Web?
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        ##...pour partager des informations!
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Comment créer un site Web?
+
+        <ol>
+          <li class="delayed">Nous le dessinons sur une feuille de papier et prenons une photo.</li>
+          <li class="delayed">Nous utilisons un programme de traitement de texte, comme Microsoft Word.</li>
+          <li class="delayed">Nous crions jusqu'à ce que l'ordinateur crée un site Web.</li>
+          <li class="delayed">Nous écrivons du code.</li>
+        </ol>
+
+        ![https://www.flickr.com/photos/baldiri/5734993652](framework/img/workshop/wireframe.jpg)
+        ![https://www.flickr.com/photos/ivanwalsh/4457223020](framework/img/workshop/worddoc.jpg)
+        ![https://pixabay.com/en/social-social-networks-1206614/](framework/img/workshop/angry.jpg)
+        ![https://pixabay.com/en/code-programming-hacking-html-web-820275/](framework/img/workshop/code.jpg)
+
+                <div class="dropdown">
+                          <button class="dropbtn">Sources</button>
+                          <div class="dropdown-content">
+                            <a href="https://www.flickr.com/photos/baldiri/5734993652">Photo de maquette</a>
+                            <a href= "https://www.flickr.com/photos/ivanwalsh/4457223020">Photo de Microsoft Word</a>
+                            <a href= "https://pixabay.com/en/social-social-networks-1206614/]">Illustration de réseaux sociaux</a>
+                            <a href="https://pixabay.com/en/code-programming-hacking-html-web-820275/">Photo de code</a>
+                          </div>
+
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Les sites Web sont créés avec du code!
+      </script>
+    </section>
+
+    <section class="slide centered" data-markdown data-toc>
+      <script type="text/template">
+        #À quoi ressemble le code?
+        <img src= "framework/img/code.JPG" alt="Code">
+      </script>
+    </section>
+
+    <section class="slide centered" data-markdown data-toc>
+      <script type="text/template">
+        #À quoi ressemble le code?
+        <img src= "framework/img/code1.JPG" alt="Code">
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Comment afficher des sites Web?
+
+        * Nous utilisons un navigateur pour afficher des sites Web sur Internet.
+        * Les navigateurs lisent le code que nous écrivons et le transforment en sites Web que l'on peut voir.
+
+        <img src= "framework/img/browsers.jpg" alt="Browsers">
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Jetons un coup d'oeil!
+
+        Nous pouvons utiliser les **outils de développement de Chrome** pour afficher le code d'un site Web et modifier l'apparence de la page dans la fenêtre de notre navigateur.
+
+        1. Ouvrez [ce site](offline-docs/superhero-profile/pantherenoire.html).
+        1. Faites un clic droit ou tapez à deux doigts sur la page et sélectionnez **Inspecter**.
+
+        Essayez de changer l'en-tête!
+
+        ![Inspectez l'élément H1 et modifiez le texte entre les deux balises H1.](framework/img/workshop/inspect-element_fr.png)
+
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Programmer en HTML
+
+        ##Bâtissons l'Internet!
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #HTML : LANGAGE DE BALISAGE HYPERTEXTE (HYPER TEXT MARKUP LANGUAGE)
+
+        <ul>
+          <li>Le HTML est un langage informatique.</li>
+          <li>Nous utilisons le HTML pour communiquer avec les navigateurs.</li>
+          <li>Lorsque nous utilisons le HTML, nous donnons des informations au navigateur à propos de notre site Web et lui disons quel contenu afficher.</li>
+        </ul>
+      </script>
+    </section>
+
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #ALORS... COMMENT ÉCRIRE EN HTML? COMMENT LIRE LE HTML?
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Le HTML est composé d'éléments.
+
+        <img src= "framework/img/elements_fr.jpg" alt="Éléments HTML">
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Syntaxe du HTML
+
+        Les balises prennent des chevrons `< >` et une barre oblique vers l'avant `/` pour la balise de fermeture. Trouvez ces touches sur votre clavier!
+
+        ![Touches du clavier](framework/img/workshop/keyboard-html_fr.png)<!-- .element: width="70%" -->
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #HTML : LE NIVEAU DU CONTENU
+
+        Les balises viennent normalement en paire : il y a une balise d'ouverture et une balise de fermeture. Ces balises entourent le contenu. Si vous regardez bien, la balise de fermeture prend une barre oblique vers l'avant (/), mais pas la balise d'ouverture.
+        ```xml
+        <balise> balise d'ouverture --- balise de fermeture </balise>
+        ```
+        Les balises HTML décrivent le contenu qui se trouve à l'intérieur afin que le navigateur puisse le comprendre.
+        ```xml
+        <h1>Cette balise décrit un en-tête.</h1>
+        <p>Cette balise décrit un paragraphe.</p>
+        ```
+      </script>
+    </section>
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Les balises imbriquées
+
+        Les balises peuvent être *imbriquées*, c'est-à-dire mises dans d'autres balises, comme ceci :
+
+        ```
+        <baliseexterne>contenu externe <baliseinterne>contenu interne</baliseinterne>contenu externe</baliseexterne>
+        ```
+
+        Les balises imbriquées créent une hiérarchie ou une sorte d'arbre généalogique. Les éléments sont considérés comme des « parents » ou des « enfants » d'autres éléments.
+
+        L'élément interne, qui se trouve dans un autre élément (l'élément externe), est l'enfant de l'élément externe.
+
+        ```
+        <parent>
+          <enfant></enfant>
+        </parent>
+        ```
+      </script>
+    </section>
+
+    <section class="slide centered" data-markdown data-toc>
+      <script type="text/template">
+        #Êtes-vous prêts à programmer?
+
+        <img src= "framework/img/cat.gif" alt="Gif de chat qui tape">
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Éditeur de texte
+
+        * Nous utilisons les éditeurs de texte pour écrire et modifier du code.
+        * Les éditeurs de texte préinstallés (Bloc-notes / TextEdit) n'ont pas beaucoup de fonctions.
+        * Il y a des options payantes et gratuites qui proposent des fonctions comme le surlignage en couleur et des modules d'extension pour améliorer votre flux de travaux.
+
+        L'éditeur **[Atom](https://atom.io/)** est entièrement gratuit. Il s'agit du programme que nous utiliserons aujourd'hui.
+        <span class="note">(S'il y a un autre éditeur installé sur votre ordinateur, il convient aussi pour l'atelier. Toutefois, quelques fonctions seront différentes de celles d'Atom.)</span>
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      #Préparer le projet
+
+      À l'intérieur du dossier de fichiers d'apprentissage que vous avez téléchargé aujourd'hui, ouvrez le dossier **project** l'éditeur de texte pour modifier votre projet.
+
+      ```html
+      codemobile-html-css
+        |-- framework // Ce dossier contient les fichiers des diapositives. Ne modifiez pas les fichiers qui s'y trouvent!
+        |-- project // Ce dossier contient les fichiers des exercices de l'atelier (images et fichiers CSS et HTML).
+        |-- diapositives.html // Vous regardez ce fichier en ce moment!
+      ```
+
+      Dans Atom, allez dans **File** > ** Add Project Folder**. Une fenêtre s'affichera.
+
+      ![](framework/img/workshop/editor-add-project-1.jpg)
+
+      Ensuite :
+
+      * Allez dans le dossier **codemobile-html-css**.
+      * Sélectionnez **project**.
+      * Cliquez sur **Ouvrir** ou **Open**.
+
+      Les fichiers s'afficheront dans la barre latérale.
+      </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Premiers pas avec Atom
+
+        En utilisant un bon éditeur de texte et en apprenant comment tirer profit de toutes ses fonctions, vous améliorerez votre flux de travaux. Maintenant, mettez à jour l'option « text wrapping », qui enveloppe le texte pour faciliter la lecture de longs blocs de code et de texte.
+
+        Allez dans **Preferences** pour ouvrir les options de personnalisation d'Atom.<br />
+        Si vous utilisez Windows, allez dans **File** et sélectionnez **Settings**.
+
+        ![](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="70%" -->
+
+        Sélectionnez l'onglet **Editor** dans le menu à gauche.
+
+        ![](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
+
+        Assurez-vous de bien cocher les cases des options **Soft Wrap** et **Show Indent Guide**.
+
+        ![](framework/img/workshop/atom-soft-wrap.jpg)<!-- .element: width="70%" -->
+
+        ---
+        ###Ressources
+
+        *   [Documentation Atom](https://atom.io/docs)
+        *   [Liste de raccourcis Atom](https://bugsnag.com/blog/atom-editor-cheat-sheet)
+        *   [Personnaliser Atom](https://atom.io/docs/v0.61.0/customizing-atom)
+        *   [Thèmes pour Atom](https://atom.io/themes)
+        *   [Extraits de code (snippets)](https://github.com/atom/snippets) - créez vos propres raccourcis vers des extraits de code.
+      </script>
+    </section>
+
+    <section id="basic-tags" class="slide" data-markdown>
+      <script type="text/template">
+        #Balises HTML de base
+
+        Ouvrez **index.html** dans Atom.
+
+        Les balises ci-dessous doivent se trouver dans **tous** les documents HTML.
+
+        ```
+        <!DOCTYPE html>
+        <html lang="fr">
+          <head>
+            <meta charset="UTF-8">
+            <title></title>
+          </head>
+          <body>
+            <!-- Le contenu de la page doit être mis ici. (Au fait, ceci est un commentaire HTML.) -->
+          </body>
+        </html>
+        ```
+
+        Pour créer une page HTML, il vous suffit de créer un document et de l'enregistrer avec l'extension de fichier `.html`.
+
+        **Ressource hors ligne : [Documentation HTML](offline-docs/html-reference-fr.htm)**
+
+        ---
+        ###Ressources
+
+        *   [Documentation CSS sur w3schools.com](https://www.w3schools.com/cssref)
+        *   [Documentation CSS de MDN](https://developer.mozilla.org/fr/docs/Web/CSS)
+        *   [FAQs de StackOverflow](https://stackoverflow.com/)
+
+      </script>
+    </section>
+
+    <section class="slide highlighted-tags" data-markdown>
+      <script type="text/template">
+        #L'ÉLÉMENT HTML
+
+        * Il s'agit toujours de la première balise HTML. L'élément identifie le document comme un document HTML.
+        * L'élément HTML est l'élément racine et l'ancêtre de tous les autres éléments, car tout est *imbriqué* à l'intérieur.
+        * L'*attribut* `lang` détermine la langue du document.
+
+        <pre><code>&lt;!DOCTYPE html&gt;
+        <strong>&lt;html lang=&quot;fr&quot;&gt;</strong>
+          &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;title&gt;&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;!-- Le contenu de la page va ici. --&gt;
+          &lt;/body&gt;
+        <strong>&lt;/html&gt;</strong>
+        </code></pre>
+      </script>
+    </section>
+
+    <section class="slide highlighted-tags" data-markdown>
+      <script type="text/template">
+        #L'ÉLÉMENT HEAD
+
+        * Il contient des informations sur la « tête » de la page, mais le contenu qui s'y trouve *n'est pas affiché sur la page*.
+        * Seul l'élément `<title></title>` est obligatoire.
+          * Il s'affiche dans l'onglet du navigateur, les marque-pages et les résultats dans les moteurs de recherche.
+        * Le contenu ne va *jamais* dans cette section.
+
+        <pre><code>&lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;fr&quot;&gt;
+          <strong>&lt;head&gt;</strong>
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;title&gt;Le titre de ma page&lt;/title&gt;
+          <strong>&lt;/head&gt;</strong>
+          &lt;body&gt;
+            &lt;!-- Le contenu de la page va ici. --&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;
+        </code></pre>
+      </script>
+    </section>
+
+    <section class="slide highlighted-tags" data-markdown>
+      <script type="text/template">
+        #L'ÉLÉMENT BODY
+
+        Tout le contenu que vous souhaitez afficher dans la fenêtre du navigateur doit se trouver dans les balises `<body></body>`. Il s'agit du « corps » de la page.
+
+        <pre><code>&lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;fr&quot;&gt;
+          &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;title&gt;Le titre de ma page&lt;/title&gt;
+          &lt;/head&gt;
+          <strong>&lt;body&gt;</strong>
+            &lt;!-- Le contenu de la page va ici. --&gt;
+          <strong>&lt;/body&gt;</strong>
+        &lt;/html&gt;
+        </code></pre>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Attributs
+
+        * Ils fournissent des informations supplémentaires sur l'élément et des consignes.
+        * Les attributs se trouvent à *l'intérieur de la balise d'ouverture*.
+        * Ils suivent la syntaxe `attribut="valeur"` (remarquez bien les guillemets).
+        * Il y a beaucoup d'attributs différents pour chaque élément HTML.
+
+        ```
+        <balise attribut="valeur">contenu</balise>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Attributs
+
+        Nous avons vu deux attributs dans l'exemple de page HTML de base.
+
+        L'attribut `lang` sert à indiquer la langue de la page.
+
+        ```
+        <html lang="fr">
+        ```
+
+        L'attribut `charset` indique le codage de caractères de la page.
+        ```
+        <meta charset="UTF-8">
+        ```
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown>
+      #Ajouter du contenu
+      ##Paragraphes, en-têtes, images et liens
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Paragraphes
+
+        Qu'ils comportent une ou plusieurs phrases, les **paragraphes** ont besoin d'une paire de balises `<p></p>`.
+
+        ```xml
+        <p>Ceci est un paragraphe.</p>
+
+        <p>Ceci est un long paragraphe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vero dolor expedita quasi reiciendis minus unde sapiente id eveniet saepe officia quibusdam aspernatur, sint voluptate ipsam ex magni. Aliquam, ex!</p>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+    <script type="text/template">
+      #Exercice
+      ##Modifiez le texte d'un paragraphe sur votre site.
+
+      * Nous modifierons le contenu de notre code HTML.
+      * Le contenu est le texte entre la balise d'ouverture ```<p>``` et la balise de fermeture ```</p>```.
+
+    </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #En-têtes
+
+        Il y a 6 balises d'en-tête, de `<h1>` à `<h6>`, qui servent à décrire la *hiérarchie* de la structure d'une page. Pour bien choisir votre balise d'en-tête, pensez à la structure d'un texte argumentatif. Chaque en-tête a une taille différente.
+
+        <div class="example essay-headings">
+        <p><strong>Titre du texte</strong></p>
+        <ol>
+         <li>Introduction : sujet amené, sujet posé, sujet divisé</li>
+         <li>Idée principale n° 1
+           <ul>
+             <li>idée secondaire n° 1</li>
+             <li>idée secondaire n° 2</li>
+           </ul>
+         </li>
+         <li>Idée principale n° 2
+           <ul>
+             <li>idée secondaire n° 1</li>
+             <li>idée secondaire n° 2</li>
+           </ul>
+         </li>
+         <li>Conclusion</li>
+        </ol>
+        </div>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      #Exercice
+      ##Ajoutez des en-têtes et des paragraphes à votre site!
+    </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Balises autofermantes et images
+
+        Les balises autofermantes ne formatent pas de contenu et n'ont pas besoin de balise de fermeture. Elles servent à intégrer du contenu sur une page. Elles *sont* le contenu.
+
+        Les images utilisent une balise autofermante ainsi qu'un *attribut* `src` pour indiquer au navigateur l'emplacement du fichier d'image.
+
+        ```
+        <img src="chemin/vers/image/nom-du-fichier"/>
+
+        ```
+
+        L'attribut `alt` est aussi ajouté aux images pour offrir du *texte alternatif* qui servira à décrire l'image aux personnes ayant une déficience visuelle qui utilisent un lecteur d'écran pour consulter le site.
+
+        ```
+        <img src="http://placekitten.com/200/300" alt="Un chaton!"/>
+
+        ```
+
+        ##Exemple de texte alternatif `alt` qui s'affiche lorsqu'une image ne se charge pas :
+        <img src="" alt="Un chaton!"/>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Types de fichiers d'image
+
+        **gif** - Un fichier de petite taille idéal pour les dessins au trait, les graphiques et les images qui n'ont pas beaucoup de couleurs différentes. <span class="note">(Si vous vous demandiez pourquoi les gifs sont de mauvaise qualité, voici la réponse!)</span>
+
+        **jpg** - Un fichier de petite taille pour les photos ayant beaucoup de couleurs riches ou de dégradés.
+
+        **png** - Un fichier de grande taille et de qualité supérieure pour les images ayant un arrière-plan transparent.
+
+        **svg** - Un format de dessin vectoriel basé sur le XML pour les graphiques 2D. Ce format prend en charge l'interactivité et l'animation.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Chemins d'accès des fichiers d'image
+
+        Il est recommandé, mais pas obligatoire, de mettre les fichiers d'image dans leur propre dossier pour bien organiser les fichiers du projet. Nous avons déjà enregistré quelques images dans le dossier `images` afin que vous puissiez les utiliser.
+
+        Comme les images ne sont pas dans le même dossier que **index.html**, utilisez un chemin *relatif* pour lier les fichiers d'image.
+
+        ```
+        <img src="images/fichier-image.jpg"/>
+        ```
+        L'exemple ci-dessous dirige le navigateur vers un dossier nommé **images**, puis au nom du fichier *avec l'extension du fichier*.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      #Exercice
+      ##Ajoutez une image!
+    </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Hyperliens
+
+        Un hyperlien fait référence à des données, comme un document Web, que le lecteur peut consulter directement en cliquant ou en mettant son pointeur de souris sur le lien.
+
+        Utilisez la balise d'ancrage, `<a>`, pour créer un lien. La balise a aussi besoin d'un attribut `href` qui fournit des informations sur l'emplacement de la ressource.
+
+        ```xml
+        <a href="http://canadalearningcode.ca">Canada en programmation</a>
+        ```
+
+        Voici la syntaxe pour créer un lien vers une adresse courriel :
+        ```xml
+        <a href="mailto:allo@moncourriel.com">allo@moncourriel.com</a>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice : Vos passe-temps
+        <ul>
+            <li>Notre site Web est un peu vide!</li>
+            <li>Ajoutons-y du contenu qui nous ressemble.</li>
+            <li>Après la dernière balise ``` <img>```, ajoutez une balise ``` <h2>``` pour créer une autre section.</li>
+            <li>Ajoutez quelques paragraphes ```(<p>) ``` pour parler de vos passe-temps, comme les livres, les films, le sport, les jeux vidéo ou les animaux!</li>
+        </ul>
+
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+      #À la découverte du CSS!
+      ##Créons un site <strike>magnifique</strike> vraiment cool!
+    </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Pourquoi il est important de créer des sites « laids »
+
+        * Il est difficile de créer de beaux sites.
+        * Programmeur `!=` concepteur. (Bien que certains programmeurs soient des concepteurs, ils sont aussi rares que des licornes. 🦄)
+        * Si nous apprenons une langue, nous n'allons pas créer un chef-d'oeuvre de poésie au premier cours.
+        * En faisant cela, nous avons l'occasion de nous concentrer sur la découverte du code!
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #CSS : Feuilles de style en cascade (Cascading Style Sheets)
+
+        * Le CSS est un langage différent du HTML.
+        * Il s'agit d'un langage à feuilles de style qui a ses propres règles de syntaxe.
+        * On l'utilise pour séparer le contenu (HTML) de la présentation (CSS).
+
+        Le CSS utilise ces caractères : accolades `{ }`, deux-points `:`, point-virgule `;`.
+
+        ![clavier](framework/img/workshop/keyboard-css_fr.jpg)
+
+      </script>
+    </section>
+
+    <section class="slide two-col-list" data-markdown>
+      <script type="text/template">
+        #Quelle est la différence?
+        * HTML
+          * Utilisé pour déterminer le contenu d'un site.
+            <h3>En-têtes</h3>
+            Paragraphes<br>
+            ![Images](framework/img/workshop/images.png)<br>
+            <a href="http://css.cool">Liens</a><br>
+            * Listes (comme celle-ci!)
+        * CSS
+          * Utilisé pour déterminer le style d'un site.
+            <div style="color: Turquoise;">Couleurs</div>
+            <div style="font-family: Impact, Charcoal, sans-serif !important;">Polices</div>
+            <div style="background-color: Gold;">Arrière-plans</div>
+            <div style="border: 5px solid plum;">Bordures</div>
+            <div style="font-size: 72px;">Tailles</div>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #UN SITE WEB SANS CSS
+        <img src= "framework/img/nocss.jpg" alt="Site Web sans CSS">
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #UN SITE WEB AVEC DU CSS
+
+        <img src= "framework/img/css.jpg" alt="Site Web avec CSS">
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Où va le CSS?
+
+        Ouvrez le fichier ```style.css``` dans le même dossier que le fichier ``index.html``.
+
+     <link rel="stylesheet" href="style.css" type="text/css"/>
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Le CSS comprend des règles
+
+        <ul>
+          <li>Les éléments HTML doivent suivre des règles pour être parfaits!</li>
+          <li>Par exemple, le CSS peut sélectionner tous les paragraphes d'une page et leur dire de prendre la couleur rouge.</li>
+          <li>Le CSS peut aussi sélectionner toutes les listes d'une page et les modifier afin que leur police ait une taille de 16 pixels.</li>
+          <li>Il y a de nombreuses règles de CSS!</li>
+      </ul>
+
+        **Ressource hors ligne : [CSS.cool](offline-docs/css-reference.htm)**
+
+        ---
+        ###Ressources
+
+        *   [Documentation CSS sur w3schools.com](https://www.w3schools.com/cssref)
+        *   [Documentation CSS de MDN](https://developer.mozilla.org/fr/docs/Web/CSS)
+        *   [FAQs de StackOverflow](https://stackoverflow.com/)
+
+      </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Essayons ces règles!
+        ```
+        sélecteur {
+          propriété: valeur;
+        }
+        ```
+        **Sélecteur ** : détermine à quels éléments HTML les règles s'appliquent.
+
+        **Propriétés** : détermine pour quelle propriété nous souhaitons créer une règle, comme la couleur (« color ») ou la taille.
+
+        **Valeurs** : détermine l'attribut de cette propriété, comme rouge (« red ») ou la largeur.
+
+        ```
+        p {
+          color: red;
+        }
+        ```
+        >Dans l'exemple ci-dessus, quel est le sélecteur? Quelle est la propriété? Quelle est la valeur?
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #À quoi servent ces extraits de code?
+
+        ##Ouvrez le fichier **style.css** et essayez les extraits de code suivants :
+
+        ```css
+          h1 {
+            text-align: center;
+            color: OrangeRed;
+          }
+        ```
+
+        ```css
+          p {
+            font-weight: bold;
+            font-size: 18px;
+          }
+        ```
+
+      </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Couleur
+
+        Nous pouvons définir la couleur de l'arrière-plan avec la propriété CSS <strong>background-color</strong>.
+
+        ```background-color: red;```
+
+        Sélectionnez l'élément « body » et changez sa couleur!
+
+      </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Texte et couleur
+
+        Nous pouvons changer la couleur du texte avec la propriété <strong>color</strong>.
+
+        ```color:blue;```
+
+        Sélectionnez l'élément « body » et changez sa couleur!
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Les polices et le CSS
+
+        <ul>
+          <li>Nous ne pouvons pas utiliser n'importe quelle police sur notre site Web.</li>
+          <li>Il est important de sélectionner une police « prête pour le Web ».</li>
+          <li>Vous pouvez définir la police de votre texte avec la propriété font-family.</li>
+
+        ```font-family: Impact, Charcoal, sans-serif;```
+
+      </script>
+    </section>
+
+
+    <section class="slide nested-list" data-markdown>
+      <script type="text/template">
+        #Polices prêtes pour le Web
+
+        Les polices dites « prêtes pour le Web » sont installées par défaut. Toutefois, comme les systèmes d'exploitation n'ont pas les mêmes polices installées par défaut, utilisez une pile de polices (« font stack ») pour avoir des options de rechange.
+
+        ```
+        font-family: Helvetica, Arial, sans-serif;
+        ```
+
+        * Voici quelques polices prêtes pour le Web :
+          * <span style="font-family:Arial;">Arial</span>
+          * <span style="font-family:Verdana;">Verdana</span>
+          * <span style="font-family:Times New Roman;">Times New Roman</span>
+          * <span style="font-family:Georgia;">Georgia</span>
+          * <span style="font-family:Courier;">Courier</span>
+
+        Consultez la page suivante pour afficher une liste complète : <http://www.cssfontstack.com>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Changer la taille avec des pixels
+
+        Les pixels sont de petits éléments dans notre écran.
+
+        Nous pouvons changer la taille du texte avec la propriété <strong>font-size</strong> en définissant la taille en pixels.
+
+        ```font-size: 64px;```
+
+        Essayez de grossir le `h1` sur votre site!
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Changer la taille avec un pourcentage
+
+        Nous pouvons aussi changer la taille des éléments à l'aide d'un pourcentage. Cette option est avantageuse, car elle permet aux éléments d'avoir une *taille proportionnelle à celle de la fenêtre*. Si vous souhaitez que votre site s'affiche bien sur des écrans de différentes tailles (par exemple, sur les téléphones), il est conseillé de définir la taille avec un pourcentage.
+
+        Pour changer la taille de nos images, nous modifions la propriété <strong>width</strong> (« largeur ») en définissant un pourcentage.
+
+        ```width: 50%;```
+
+        Essayez de rendre les éléments `img` de votre site plus petits avec un pourcentage.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Prolongement : sélectionner des éléments précis
+
+        Nous pouvons utiliser l'attribut `class` pour modifier un style d'éléments précis sur notre site.
+
+        ##Dans index.html
+        Donnez un nom à l'élément (par exemple, small) : `class="small"`
+        ```html
+        <img class=”small” src=”image.jpeg”/>
+        ```
+
+        ##Dans style.css
+        Ajoutez ce nom à une nouvelle règle de css :  `img.small`
+        ```css
+        img.small {
+          width: 200px;
+          border-radius: 50%
+        }
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Autres propriétés CSS intéressantes
+        ##Consultez le site [CSS.cool](offline-docs/css-reference.htm) pour découvrir différentes propriétés ou essayez celles-ci :
+
+        ```
+        color: #999999;
+        font-size: 18px;
+        font-family: ‘Comic Sans MS’;
+        font-weight: 100;
+        font-style: italic;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 2px red;
+        text-align: center;
+        line-height: 26px;
+        text-decoration: underline;
+        padding: 10px 15px 12px 10px;
+        padding-top: 15px;
+        margin: 15px 5px 15px 10px;
+        margin-top: 5px;
+        opacity: 0.5;
+        border: 5px solid #FF0000;
+        border-bottom: 1px dashed #DDDDDD;
+        border-left: 2px dotted #00000;
+        border-radius: 5px;
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide first-website" data-markdown>
+      <script type="text/template">
+        <div class="text">
+          <h1>Tadam!</h1>
+          <p>
+            Vous avez réussi à créer un site Web! HTML + CSS = site Web
+          </p>
+        </div>
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #DÉMOS
+        ##Montrez-nous vos créations!
+      </script>
+    </section>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Aujourd'hui, nous avons appris...
+
+        <p>quels sont les éléments de base d'un site;</p><!-- .element: class="delayed" -->
+        <p>comment utiliser un éditeur de texte comme Atom pour créer un site de toute pièce;</p><!-- .element: class="delayed" -->
+        <p>comment ajouter du contenu comme des en-têtes, des paragraphes et des images à un site;</p><!-- .element: class="delayed" -->
+        <p>comment modifier le style d'un site avec le CSS;</p><!-- .element: class="delayed" -->
+        <p>comment consulter la documentation du HTML et du CSS pour continuer à apprendre à la maison!</p><!-- .element: class="delayed" -->
+
+      </script>
+    </section>
+
+    <section class="slide small-type" data-markdown>
+      <script type="text/template">
+        #Prochaines étapes
+
+        ##Outils de création Web gratuits :
+
+        * Créez et hébergez des sites Web en ligne gratuitement avec [Glitch](https://glitch.com).
+        * Continuez à créer des sites Web hors ligne avec [Atom](https://atom.io).
+        * « Piratez » et explorez des sites Web avec les [lunettes à rayons X de Mozilla](https://goggles.mozilla.org).
+
+        ##Mettez vos nouvelles connaissances à profit!
+
+        * Utilisez vos connaissances du HTML en jouant à un jeu vidéo sur [eraseallkittens.com](http://eraseallkittens.com).
+        * Donnez de l'affection à vos proches en créant une bombe d'amour sur le site [LoveBomb](http://lovebomb.me/).
+        * Consultez le site [CodePen](https://codepen.io/projects/) pour obtenir de l'inspiration pour votre prochain projet.
+        * Découvrez les ateliers de [Canada en programmation](https://www.canadalearningcode.ca/fr/accueil/) à venir dans votre région.
+
+      </script>
+    </section>
+
+  <!-- Dernière diapositive -->
+    <section class="slide last">
+      <h1>Merci!</h1>
+      <h2 class="heading-bg">
+        <span>
+          Introduction au HTML et au CSS
+        </span>
+      </h2>
+
+      <ul>
+        <li><a href="http://twitter.com/learningcode">@learningcode</a></li>
+        <li><a href="https://twitter.com/search?q=%23codemobile&src=typd">#codemobile</a></li>
+      </ul>
+
+      <p class="attribution">Diapositives originales créées par <a href="http://christinatruong.com">Christina Truong</a> avec <a href="https://github.com/LeaVerou/csss">SlideShow de Lea Verou</a> et <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>. Merci aux personnes ayant contribué à la création des diapositives : <a href="https://github.com/mattb0m)">mattb0m</a>, <a href="https://github.com/zoster">zoster</a>, <a href="https://github.com/hrtovey">hrtovey</a>, <a href="https://github.com/jessynd">jessynd</a>, <a href="https://github.com/melissacrnic">melissacrnic</a> et <a href="http://pixelles.ca/blog/2015/01/workshop-twine">Rebecca Cohen Palacios</a>.</p>
+    </section>
+
+  </main><!-- Section principale cls -->
+
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Enlevez les commentaires des modules dont vous avez besoin -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Regroupe tous les éléments .snippet
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+</body>
+
+
+
+</html>

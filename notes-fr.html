@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Canada en programmation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- S'occupe des préfixes CSS3 -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- Ouvre tous les liens dans une nouvelle fenêtre -->
+  <base target="_blank">
+</head>
+
+<!-- Barre de progression / durée : définissez la durée de la présentation en minutes avec « data-duration ». -->
+<body class="en" data-duration="360">
+  <main>
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        ##Notes de la formatrice
+
+        ##HTML et CSS (2 heures)
+
+        <br>
+        #Ordre du jour
+
+        * **Intro au HTML (30 minutes)** : Code des programmeurs, Qu'est-ce que le code, Pourquoi créer des sites Web, Activité avec les outils de développement, éléments HTML.
+        * **Premiers pas avec Atom (15 minutes)** : Configuration d'Atom et ajout du dossier de projet, Balises HTML de base, Attributs.
+        * **Ajouter du contenu (30 minutes)** : Paragraphes, En-têtes, Images, Liens.
+        * **À la découverte du CSS! (30 minutes)** : Définition du CSS, Où va le CSS, Règles du CSS, Couleurs, Polices, Taille.
+        * **Conclusion (15 minutes)** : Démos, Apprentissages, Prochaines étapes.
+
+
+        <br>
+        #Notes générales
+
+        * Important : accordez aux apprenants assez de temps pour télécharger les fichiers d'apprentissage de la première diapositive. Vérifiez s'ils les ont bien téléchargés avant de passer à la deuxième diapositive.
+        * Montrez aux apprenants comment ouvrir des fichiers. Faites les étapes avec eux : ouvrez Atom > File > Add Project Folder.
+        * Montrez aux apprenants comment copier du texte des diapositives et le coller dans Atom. Certains apprenants pourraient ne pas connaître les raccourcis clavier. N'oubliez pas de mentionner les raccourcis et de dire à voix haute les touches à utiliser, car vos actions ne s'affichent pas sur le projecteur.
+        * Rappelez aux apprenants de toujours SAUVEGARDER et RAFRAÎCHIR leur site. Montrez-leur comment faire et modifiez votre code rapidement pour leur enseigner que sauvegarder et rafraîchir sert aussi à expérimenter avec le code. Faites une démonstration : essayez de faire une erreur qui « brise » le code, puis revenez en arrière, enregistrez les modifications et rafraîchissez la page.
+        * Partagez vos conseils et vos raccourcis préférés pour passer d'une fenêtre à une autre, par exemple, les coins intelligents, les raccourcis clavier ou le pointeur sur la barre de tâches.
+
+        <br>
+        #Plan d'urgence
+
+        Ce contenu est conçu pour être utilisé sans connexion à Internet, Pour réaliser l'atelier hors ligne, les apprenants doivent avoir :
+
+        * des ordinateurs avec les programmes Google Chrome et Atom installés;
+        * les fichiers d'apprentissage (enregistrés sur les ordinateurs ou obtenus à partir d'une clé USB).
+
+        Il y a des fichiers de référence hors ligne dans le dossier `offline-docs` des fichiers d'apprentissage.
+
+        * [Documentation HTML](offline-docs/html-reference-fr.htm)
+        * [CSS.cool](offline-docs/css-reference.htm)
+
+        N'oubliez pas que certains liens et les ressources supplémentaires ne fonctionneront pas sans Internet.
+
+
+        <br>
+        #Exemples propres aux diapositives
+
+        **Comment afficher des sites Web? (diapositive n° 14) :** Certains apprenants pourraient ne pas connaître le terme « navigateur ». Demandez-leur s'ils connaissent un exemple de navigateur. Comment aller sur Internet? Demandez aux apprenants de lever la main s'ils utilisent Google Chrome, par exemple.
+
+        **Jetons un coup d'oeil (diapositive n° 15) :** Durant cette activité, les apprenants auront l'occasion d'interagir avec du code HTML immédiatement. Le site Web est enregistré dans les fichiers d'apprentissage et fonctionne même sans connexion Internet. Montrez aux apprenants comment « inspecter l'élément » et accordez-leur 2 ou 3 minutes pour « pirater » le site.
+
+        **Le HTML est composé d'éléments (diapositive n° 19) :** Les éléments sont les parties d'un site Web. Lorsque nous avons inspecté le code de la page de la Panthère noire, quels sont les éléments avec lesquels nous avons interagi (par exemple, les en-têtes, les paragraphes et les images)?
+
+        **HTML : LE NIVEAU DU CONTENU (diapositive n° 21) :** En regardant les exemples, il est conseillé de répéter ceci plusieurs fois : « balise d'ouverture » (pointez le début), la « balise de fermeture » (pointez la fin) et le contenu entre les deux (pointez le texte entre les balises).
+
+        N'oubliez pas que cela s'applique à la *plupart* des éléments HTML, mais qu'il y a des exceptions. En effet, il y a des balises qui comprennent des balises d'ouverture et de fermeture jumelées en une seule balise (par exemple, les balises d'image).
+
+        **Balises HTML de base (diapositive n° 27) :** Indiquez aux apprenants qu'ils ont à leur disposition la documentation HTML hors ligne (le lien est dans cette diapositive). Encouragez les apprenants à ouvrir cette page dans un autre onglet pour trouver des informations sur le HTML rapidement. Ainsi, ils *développeront des réflexes de recherche* et leur *débrouillardise* en cherchant des réponses à leurs questions eux-mêmes plutôt qu'en demandant à la formatrice. Ils auront la clé du succès pour continuer à apprendre après l'atelier!
+
+        **L'élément head (diapositive n° 29) :** Expliquez aux apprenants que `<head>` comprend toutes les informations qui sont essentielles à la page, mais que nous n'avons pas besoin de montrer aux utilisateurs. Informez les apprenants sur les éléments à l'intérieur de « head » :
+
+        `<meta>` fournit des métadonnées sur le document HTML. Dans ce cas-ci, il s'agit du codage des caractères (le type d'alphabet) utilisé sur la page. Il convertit des octets d'information en caractères (par exemple, des lettres).
+
+        `<title>` indique le nom du site Web (le nom qui s'affiche lorsque vous mettez la page dans vos marque-pages ou vos favoris de navigateur).
+
+        **L'élément body (diapositive n° 30) :** Tout notre contenu va dans cet élément. Il s'agit du contenu que l'utilisateur voit lorsqu'il consulte notre site Web. Nous passerons la majorité de notre temps ici.
+
+        **Attributs (diapositive n° 31) :** Nous reviendrons à ces notions plus tard. Les attributs servent à fournir du contenu supplémentaire aux utilisateurs ayant une déficience (par exemple, une déficience visuelle) en ajoutant un texte alternatif pour décrire les images sur la page.
+
+        **Exercice (diapositive n° 35) :** Accordez 2 ou 3 minutes aux apprenants pour qu'ils puissent modifier l'élément de paragraphe (le texte) sur leur site.
+
+        **Exercice (diapositive n° 37) :** Remarque à propos des en-têtes : normalement, on ne met qu'un seul H1 par page. (Les experts en référencement naturel (SEO) vous diront qu'il est avantageux d'ajouter plusieurs balises d'en-tête, mais si vous souhaitez créer un site accessible, nous vous recommandons d'utiliser qu'une seule balise. Avant tout, évitez de sauter des rangs, car les lecteurs d'écran pourraient avoir de la difficulté à interpréter votre site. (Par exemple, n'utilisez pas H1 et H3 sans H2.)
+
+        **Balises autofermantes et images (diapositive n° 38) :** Voici un attribut qui nous permet de concevoir des sites accessibles : le texte alternatif!
+
+        **Chemins d'accès des fichiers d'image (diapositive n° 40) :** Où sont nos images? Nous devrons ajouter DEUX chemins relatifs pour indiquer l'emplacement de nos images. Par exemple, `/images/food/donut.jpeg`. Précisez bien que jpeg et jpg sont le même type de fichier; au départ, l'extension s'appelait « jpeg », mais elle a été raccourcie en « jpg ».
+
+        **Exercice (diapositive n° 41) :** Montrez aux apprenants comment trouver les images qui ont été enregistrées dans le dossier « project ». Pour aujourd'hui, ils ont le choix d'utiliser des images de nourriture ou d'animaux, mais ils pourront les remplacer par leurs propres images après l'atelier.
+
+        **Exercice : Vos passe-temps (diapositive n° 43) :** Vous pouvez mettre les apprenants au défi de créer une liste d'objets plutôt qu'un paragraphe. Encouragez-les à chercher dans la documentation HTML pour trouver comment créer une liste. Utilisez le raccourci ctrl/command + F pour chercher des mots-clés. (Les balises `<ul>` et `<ol>` servent à créer des listes!)
+
+        **Site Web sans CSS (diapositive n° 48)** et **Site Web avec CSS (diapositive n° 49) :** Ces deux sites sont identiques. Un site a une feuille de style et l'autre n'en a pas.
+
+        **Où va le CSS? (diapositive n° 50) :** Cette ligne de code est la différence entre les deux exemples de pages que nous avons vus. Ce code dit à notre page HTML où trouver la feuille de style, qui comprend des règles qui déterminent l'apparence du site Web.
+
+        Notre projet de départ comprend déjà ce lien dans l'élément `<head>`. Les apprenants peuvent-ils le trouver?
+
+        **Règles du CSS (diapositive n° 51) :** Attirez l'attention des apprenants sur la ressource CSS.cool. Ce site Web est aussi disponible hors ligne, car nous l'avons enregistré dans le dossier des fichiers d'apprentissage. Demandez aux apprenants d'ouvrir le site dans un nouvel onglet pour avoir de nouvelles options de style pour leur site.
+
+        **Couleurs (diapositive n° 54) :** Nous avons deux options : utiliser les noms des couleurs (allez dans l'onglet « colors » de css.cool) OU les codes hexadécimaux pour avoir des couleurs précises (allez dans l'onglet « colour picker » de css.cool). Lorsque vous utilisez des codes hexadécimaux, n'oubliez pas d'ajouter un `#` devant le code à 6 caractères.
+
+        **Polices et CSS (diapositive n° 56) :** Bien que nous ne puissions pas utiliser n'importe quelle police en ce moment, il est possible d'utiliser des polices tirées de sites comme [Google Fonts](http://fonts.google.com) pour importer des polices originales dans notre code. L'importation de polices ne peut être faite que si vous êtes connecté à Internet. Grâce au code d'importation, même les utilisateurs qui n'ont pas cette police installée sur leur ordinateur pourront l'afficher sur la page.
+
+        **Prolongement : Sélectionner des éléments précis (diapositive n° 60) :** Ne faites cet exercice que si vous en avez le temps ou si les apprenants vous demandent comment changer la taille d'une seule image sur leur page, par exemple.
+
+        Veuillez noter que les attributs `id` peuvent aussi être utilisés pour le CSS, mais seulement une fois par page. Certaines personnes préfèrent donc utiliser les classes seulement pour le style en raison de cette règle. Pour en savoir plus, [cliquez ici](https://css-tricks.com/the-difference-between-id-and-class/).
+
+        **Démos (diapositive n° 63) :** Bonus : si vous en avez le temps, faites une « galerie d'art » : les apprenants rafraîchiront leur page, replaceront leur chaise et se lèveront pendant 5 à 10 minutes pour marcher dans le local et essayer les sites Web de leurs camarades. Si vous n'avez pas beaucoup de temps, demandez aux apprenants se présenter leur site à leur voisin.
+
+      </script>
+    </section>
+
+  </main><!-- Section principale cls  -->
+
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Enlevez les commentaires des modules dont vous avez besoin -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Regroupe tous les éléments .snippet
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+</body>
+
+
+
+</html>
